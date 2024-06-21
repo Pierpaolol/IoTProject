@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --table-width: 70%;
+    --border-style: 1px solid #ddd;
+    --cell-padding: 8px;
+    --text-alignment: center;
+    --header-bg-color: #4CAF50;
+    --header-text-color: white;
+    --even-row-bg-color: #f2f2f2;
+    --hover-row-bg-color: #ddd;
+    --border-radius: 15px;
+    --font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f2f2f2;
+    font-family: var(--font-family);
+}
+
+/* Stile generale della tabella */
+table {
+    width: var(--table-width);
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    overflow: hidden; /* Assicura che il bordo arrotondato sia visibile */
+}
+
+/* Stile delle celle della tabella */
+td, th {
+    border: var(--border-style);
+    padding: var(--cell-padding);
+    text-align: var(--text-alignment);
+}
+
+/* Stile dell'intestazione della tabella */
+th {
+    padding-top: var(--cell-padding);
+    padding-bottom: var(--cell-padding);
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+
+/* Stile per le righe della tabella */
+tr:nth-child(even) {
+    background-color: var(--even-row-bg-color);
+}
+
+/* Stile per le righe della tabella al passaggio del mouse */
+tr:hover {
+    background-color: var(--hover-row-bg-color);
+}
