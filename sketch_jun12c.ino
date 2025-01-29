@@ -36,7 +36,7 @@ const char* password = "JXxfp7PnhndMPR7Y";
   //Your Domain name with URL path or IP address with path
 }
 */
-const char* serverName = "http://192.168.1.15/IoTProject/dataGathering.php";
+const char* serverName = "http://MyIPAddress/IoTProject/dataGathering.php";
 /*
 {
   // the following variables are unsigned longs because the time, measured in
